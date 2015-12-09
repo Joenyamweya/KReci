@@ -18,9 +18,9 @@
 @import "bootstrap";
 
 @mixin box-shadow {
-	-webkit-box-shadow: rgba(0, 0, 0, 0.9) 0 2px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.9) 0 2px 0;
-	box-shadow: rgba(0, 0, 0, 0.9) 0 2px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+	box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
 }
 
 $red: #DB6161;
@@ -48,13 +48,13 @@ body {
 	@include box-shadow;
 	border: none;
 	.navbar-brand {
-	 text-transfrom: uppercase;
-	 letter-spacing: 1px;
-	 font-weight: bold;
-	 font-size: 25px;
-	 a {
-	  color: $red;
-	 }
+		text-transform: uppercase;
+		letter-spacing: -1px;
+		font-weight: bold;
+		font-size: 25px;
+		a {
+			color: $red;
+		}
 	}
 }
 
@@ -64,34 +64,34 @@ body {
 	margin-bottom: 40px;
 	@include box-shadow;
 	.image_wrapper {
-	 max-width: 100%;
-	 border-radius: 5px 5px 0 0;
-	 overflow: hidden;
+		max-width: 100%;
+		border-radius: 5px 5px 0 0;
+		overflow: hidden;
 	}
 	img {
-	 width: 100%;
-	 -webkit-transition: all .3s ease-out;
-	 -moz-transition: all .3s ease-out;
-	 -o-transition: all .3s ease-out;
-	 transition: all .3s ease-out;
-	 &:hover {
-	  transform: scale(1.075);
-	 }
+		width: 100%;
+		-webkit-transition: all .3s ease-out;
+	  -moz-transition: all .3s ease-out;
+	  -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+		&:hover {
+			transform: scale(1.075);
+		}
 	}
 	h2 {
-	 padding: 15px 5%;
-	 margin: 0;
-	 font-size: 20px;
-	 font-weight: normal;
-	 line-height: 1.5;
-	 a {
-	  color: $red;
-	 }
+		padding: 15px 5%;
+		margin: 0;
+		font-size: 20px;
+		font-weight: normal;
+		line-height: 1.5;
+		a {
+			color: $red;
+		}
 	}
 }
 
 #recipe_top {
-	margin-bottom: 50px
+	margin-bottom: 50px;
 }
 
 #recipe_info, #ingredients, #directions {
@@ -141,7 +141,7 @@ body {
 .form-button {
 	float: left;
 	width: 30% !important;
-	margin-left: 5%
+	margin-left: 5%;
 }
 .add-button {
 	margin-top: 25px;
